@@ -1,7 +1,29 @@
 /******************
  * YOUR CODE BELOW *
  ******************/
+const assert = require('assert');
+const {
+myFirstName = "Cameron",
+myLastName = "Jones",
+myFavoriteCeleb = "Will Smith",
+mySentence = "My name is Cameron Jones and my favorite celberity is Will Smith",
+myLuckyNum = 6,
+myAge = 33,
+myHeight = 70in,
+myFavoriteYear = 1989,
+mySum = 6*2,
+myProduct ,
+myHeightAndAge ,
+} = require('./main.js');
 
+
+let mySum = 5 + 2317 + 36;
+
+
+let myProduct = (232 * 43) / 2 + 4;
+
+
+let myHeightAndAge = myAge + myHeight;
 
 /*********************************************************************************************************************
 

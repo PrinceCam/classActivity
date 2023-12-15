@@ -1,7 +1,35 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
- **********************************/
+**********************************/
+// Variables
+x = 3;
+y = 10;
+z = 4;
+greeting="Hello";
+firstName="Cameron";
+callStatus="ringing";
 
+// Functions
+function double(){
+  x=x*2
+}
+function triple(){
+  y=y*3
+}
+function square(){
+  z=z*z
+}
+
+function beNice(){
+ greeting = "hello" + firstName
+}
+
+function changeName(){
+  firstName = "Danger"
+}
+function hangUp(){
+  callStatus = "call ended"
+}
 
 
 /*********************************************************************************************************************
