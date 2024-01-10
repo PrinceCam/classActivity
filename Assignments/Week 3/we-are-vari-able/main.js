@@ -9,21 +9,20 @@ myFavoriteCeleb = "Will Smith",
 mySentence = "My name is Cameron Jones and my favorite celberity is Will Smith",
 myLuckyNum = 6,
 myAge = 33,
-myHeight = 70in,
+myHeight = 70,
 myFavoriteYear = 1989,
-mySum = 6*2,
-myProduct ,
-myHeightAndAge ,
+myProduct,
+myHeightAndAge,
 } = require('./main.js');
 
 
 let mySum = 5 + 2317 + 36;
+console.log(mySum)
+
+// let myProduct = (232 * 43) / 2 + 4;
 
 
-let myProduct = (232 * 43) / 2 + 4;
-
-
-let myHeightAndAge = myAge + myHeight;
+// let myHeightAndAge = myAge + myHeight;
 
 /*********************************************************************************************************************
 
@@ -33,60 +32,60 @@ let myHeightAndAge = myAge + myHeight;
 
  *********************************************************************************************************************/
 
-if (typeof myFirstName === "undefined") {
-  myFirstName = undefined;
-}
+// if (typeof myFirstName === "undefined") {
+//   myFirstName = undefined;
+// }
 
-if (typeof myLastName === "undefined") {
-  myLastName = undefined;
-}
+// if (typeof myLastName === "undefined") {
+//   myLastName = undefined;
+// }
 
-if (typeof myFavoriteCeleb === "undefined") {
-  myFavoriteCeleb = undefined;
-}
+// if (typeof myFavoriteCeleb === "undefined") {
+//   myFavoriteCeleb = undefined;
+// }
 
-if (typeof mySentence === "undefined") {
-  mySentence = undefined;
-}
+// if (typeof mySentence === "undefined") {
+//   mySentence = undefined;
+// }
 
-if (typeof myLuckyNum === "undefined") {
-  myLuckyNum = undefined;
-}
+// if (typeof myLuckyNum === "undefined") {
+//   myLuckyNum = undefined;
+// }
 
-if (typeof myAge === "undefined") {
-  myMentalAge = undefined;
-}
+// if (typeof myAge === "undefined") {
+//   myMentalAge = undefined;
+// }
 
-if (typeof myHeight === "undefined") {
-  myHeight = undefined;
-}
+// if (typeof myHeight === "undefined") {
+//   myHeight = undefined;
+// }
 
-if (typeof myFavoriteYear === "undefined") {
-  myFavoriteYear = undefined;
-}
+// if (typeof myFavoriteYear === "undefined") {
+//   myFavoriteYear = undefined;
+// }
 
-if (typeof mySum === "undefined") {
-  mySum = undefined;
-}
+// if (typeof mySum === "undefined") {
+//   mySum = undefined;
+// }
 
-if (typeof myProduct === "undefined") {
-  myProduct = undefined;
-}
+// if (typeof myProduct === "undefined") {
+//   myProduct = undefined;
+// }
 
-if (typeof myHeightAndAge === "undefined") {
-  myHeightAndAge = undefined;
-}
+// if (typeof myHeightAndAge === "undefined") {
+//   myHeightAndAge = undefined;
+// }
 
-module.exports = {
-  myFirstName,
-  myLastName,
-  myFavoriteCeleb,
-  mySentence,
-  myLuckyNum,
-  myAge,
-  myHeight,
-  myFavoriteYear,
-  mySum,
-  myProduct,
-  myHeightAndAge,
-};
+// module.exports = {
+//   myFirstName,
+//   myLastName,
+//   myFavoriteCeleb,
+//   mySentence,
+//   myLuckyNum,
+//   myAge,
+//   myHeight,
+//   myFavoriteYear,
+//   mySum,
+//   myProduct,
+//   myHeightAndAge,
+// };

@@ -61,3 +61,39 @@ const myPersevereCodeObj = {
 
 
 // As a stretch goal, go back pre-populate the object with at least one property using a key name that CAN'T be a variable name. That would be anything with a space in it, or a dash, or starting with a number.
+
+
+
+
+// 📔 Object
+// Creating an empty object
+// Creating an objecting with values
+// Getting values from an object
+// Creating object methods
+// Setting new key for an object
+// Object Methods
+// Getting object keys using Object.keys()
+// Getting object values using Object.values()
+// Getting object keys and values using Object.entries()
+// Checking properties using hasOwnProperty()
+
+//..........................................To Do............................................
+// Create an empty object called 
+const dog={
+}
+
+
+// Print the the dog object on the console
+console.log(dog)
+
+// Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
+
+const dog={
+  name: "Spike",
+  legs: 4,
+  color: "Black",
+  age: 14,
+  
+}
+console.log(dog["color"])
+// Get name, legs, color, age and bark value from the dog object
