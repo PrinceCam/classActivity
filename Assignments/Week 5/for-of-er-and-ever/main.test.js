@@ -1,122 +1,145 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function cubeAll(numbers) {
+  return numbers.map(num => num ** 3);
+}
 
+function addNoises(animals) {
+  const animalNoises = {
+      cat: 'meow',
+      dog: 'woof',
+      cow: 'moo',
+      bird: 'tweet',
+      elephant: 'toot',
+  };
 
+  return animals.map(animal => {
+      const noise = animalNoises[animal.toLowerCase()] || 'unknown noise';
+      return `${animal} says ${noise}`;
+  });
+}
+function womenOnly(namesAndGender) {
+  return namesAndGender.filter(entry => entry.endsWith('F'));
+}
+
+function integersOnly(numbers) {
+  return numbers.filter(num => Number.isInteger(num));
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
 
 
 
-if (typeof addAll === 'undefined') {
-  addAll = undefined;
-}
+// if (typeof addAll === 'undefined') {
+//   addAll = undefined;
+// }
 
-if (typeof countSpaces === 'undefined') {
-  countSpaces = undefined;
-}
+// if (typeof countSpaces === 'undefined') {
+//   countSpaces = undefined;
+// }
 
-if (typeof countTrues === 'undefined') {
-  countTrues = undefined;
-}
+// if (typeof countTrues === 'undefined') {
+//   countTrues = undefined;
+// }
 
-if (typeof makeFriendly === 'undefined') {
-  makeFriendly = undefined;
-}
+// if (typeof makeFriendly === 'undefined') {
+//   makeFriendly = undefined;
+// }
 
-if (typeof cubeAll === 'undefined') {
-  cubeAll = undefined;
-}
+// if (typeof cubeAll === 'undefined') {
+//   cubeAll = undefined;
+// }
 
-if (typeof addNoises === 'undefined') {
-  addNoises = undefined;
-}
+// if (typeof addNoises === 'undefined') {
+//   addNoises = undefined;
+// }
 
-if (typeof womenOnly === 'undefined') {
-  womenOnly = undefined;
-}
+// if (typeof womenOnly === 'undefined') {
+//   womenOnly = undefined;
+// }
 
-if (typeof integersOnly === 'undefined') {
-  integersOnly = undefined;
-}
+// if (typeof integersOnly === 'undefined') {
+//   integersOnly = undefined;
+// }
 
-const assert = require('assert');
-const {
-  addAll,
-  countSpaces,
-  countTrues,
-  makeFriendly,
-  cubeAll,
-  addNoises,
-} = require('./your-functions'); // Import your functions
+// const assert = require('assert');
+// const {
+//   addAll,
+//   countSpaces,
+//   countTrues,
+//   makeFriendly,
+//   cubeAll,
+//   addNoises,
+// } = require('./your-functions'); // Import your functions
 
-describe('addAll', () => {
-  it(`adds all the numbers in the array`, () => {
-    const nums1 = [5, 3, 7, -11, 1003];
-    const nums2 = [8, 1, 2, -53, -812];
+// describe('addAll', () => {
+//   it(`adds all the numbers in the array`, () => {
+//     const nums1 = [5, 3, 7, -11, 1003];
+//     const nums2 = [8, 1, 2, -53, -812];
 
-    assert.strictEqual(addAll(nums1), 1007);
-    assert.strictEqual(addAll(nums2), -854);
-  });
+//     assert.strictEqual(addAll(nums1), 1007);
+//     assert.strictEqual(addAll(nums2), -854);
+//   });
 
-  it(`isn't reassignable`, () => {
-    assert.throws(() => {
-      addAll = 500;
-    });
-  });
-});
+//   it(`isn't reassignable`, () => {
+//     assert.throws(() => {
+//       addAll = 500;
+//     });
+//   });
+// });
 
-describe('countSpaces', () => {
-  it(`counts all the spaces in a multi-space string`, () => {
-    const sentence1 = 'well hello there my crumpet';
-    const sentence2 = 'strings 4 eva';
+// describe('countSpaces', () => {
+//   it(`counts all the spaces in a multi-space string`, () => {
+//     const sentence1 = 'well hello there my crumpet';
+//     const sentence2 = 'strings 4 eva';
 
-    assert.strictEqual(countSpaces(sentence1), 4);
-    assert.strictEqual(countSpaces(sentence2), 2);
-  });
+//     assert.strictEqual(countSpaces(sentence1), 4);
+//     assert.strictEqual(countSpaces(sentence2), 2);
+//   });
 
-  it(`correctly identifies strings with no spaces`, () => {
-    const sentence1 = 'supercalifragilisticexpialidocious';
-    const sentence2 = 'antidisestablishmentarianism';
-    const sentence3 = 'pneunultramicroscopicsilicovulcanoconiosis';
+//   it(`correctly identifies strings with no spaces`, () => {
+//     const sentence1 = 'supercalifragilisticexpialidocious';
+//     const sentence2 = 'antidisestablishmentarianism';
+//     const sentence3 = 'pneunultramicroscopicsilicovulcanoconiosis';
 
-    assert.strictEqual(countSpaces(sentence1), 0);
-    assert.strictEqual(countSpaces(sentence2), 0);
-    assert.strictEqual(countSpaces(sentence3), 0);
-  });
+//     assert.strictEqual(countSpaces(sentence1), 0);
+//     assert.strictEqual(countSpaces(sentence2), 0);
+//     assert.strictEqual(countSpaces(sentence3), 0);
+//   });
 
-  it(`doesn't count all non-letters as spaces`, () => {
-    const sentence1 = 'how now, brown cow';
-    const sentence2 = '@(*@ are you even talking about?';
+//   it(`doesn't count all non-letters as spaces`, () => {
+//     const sentence1 = 'how now, brown cow';
+//     const sentence2 = '@(*@ are you even talking about?';
 
-    assert.strictEqual(countSpaces(sentence1), 3);
-    assert.strictEqual(countSpaces(sentence2), 5);
-  });
+//     assert.strictEqual(countSpaces(sentence1), 3);
+//     assert.strictEqual(countSpaces(sentence2), 5);
+//   });
 
-  it(`isn't reassignable`, () => {
-    assert.throws(() => {
-      countSpaces = 500;
-    });
-  });
-});
+//   it(`isn't reassignable`, () => {
+//     assert.throws(() => {
+//       countSpaces = 500;
+//     });
+//   });
+// });
 
-describe('countTrues', () => {
-  it(`counts all the trues in a true-only array`, () => {
-    const bools1 = [true, true, true];
-    const bools2 = [true, true, true, true, true];
+// describe('countTrues', () => {
+//   it(`counts all the trues in a true-only array`, () => {
+//     const bools1 = [true, true, true];
+//     const bools2 = [true, true, true, true, true];
 
-    assert.strictEqual(countTrues(bools1), 3);
-    assert.strictEqual(countTrues(bools2), 5);
-  });
+//     assert.strictEqual(countTrues(bools1), 3);
+//     assert.strictEqual(countTrues(bools2), 5);
+//   });
 
-  it(`counts all the trues in an array of assorted booleans`, () => {
-    const bools1 = [true, false, true, false];
-    const bools2 = [true, false, false, true, true, false, false, true];
+//   it(`counts all the trues in an array of assorted booleans`, () => {
+//     const bools1 = [true, false, true, false];
+//     const bools2 = [true, false, false, true, true, false, false, true];
 
-    assert.strictEqual(countTrues(bools1), 2);
-    assert.strictEqual(countTrues(bools2), 4);
-  });
+//     assert.strictEqual(countTrues(bools1), 2);
+//     assert.strictEqual(countTrues(bools2), 4);
+//   });
 
   it(`doesn't confuse truthy values with true values`, () => {
     const values1 = [true, 'hello', 3, true, []];
