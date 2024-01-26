@@ -1,31 +1,14 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-function cubeAll(numbers) {
-  return numbers.map(num => num ** 3);
+function addAll(numbers) {
+  let sum = 0;
+  for (const number of numbers) {
+    sum += number;
+  }
+  return sum;
 }
 
-function addNoises(animals) {
-  const animalNoises = {
-      cat: 'meow',
-      dog: 'woof',
-      cow: 'moo',
-      bird: 'tweet',
-      elephant: 'toot',
-  };
-
-  return animals.map(animal => {
-      const noise = animalNoises[animal.toLowerCase()] || 'unknown noise';
-      return `${animal} says ${noise}`;
-  });
-}
-function womenOnly(namesAndGender) {
-  return namesAndGender.filter(entry => entry.endsWith('F'));
-}
-
-function integersOnly(numbers) {
-  return numbers.filter(num => Number.isInteger(num));
-}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
